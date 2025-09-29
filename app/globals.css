@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0b0b0e;
+  --color-brand-card: #141418;
+  --color-brand-accent: #E3B341;
+  --color-brand-subtle: #9ca3af;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  background-color: var(--color-brand-bg);
+  color: white;
+}
+
+/* Reusable button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  background-color: var(--color-brand-accent);
+  color: black;
+  transition: opacity 0.2s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: border-color 0.2s ease;
+}
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Card */
+.card {
+  background-color: var(--color-brand-card);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Container */
+.container-max {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
