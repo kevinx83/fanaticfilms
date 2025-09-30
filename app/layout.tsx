@@ -7,7 +7,36 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Fanatic Films",
   description:
-    "Full-service animation & live-action production: writing, casting, voice direction, editing, and pitch-ready pilots.",
+    "Fanatic Films produces pitch-ready pilots and full-service productions: writing, casting, voice direction, editing, animation, and live action.",
+  keywords: [
+    "Fanatic Films",
+    "animation studio",
+    "live action production",
+    "voice acting",
+    "casting",
+    "video editing",
+    "storyboarding",
+    "Vancouver film production"
+  ],
+  openGraph: {
+    title: "Fanatic Films – We launch possibilities.",
+    description:
+      "Animation & live-action pilots and productions. Vancouver-based studio with global reach.",
+    url: "https://fanaticfilms.net",
+    siteName: "Fanatic Films",
+    images: [
+      { url: "/logo.png", width: 800, height: 600, alt: "Fanatic Films logo" },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fanatic Films – We launch possibilities.",
+    description:
+      "Full-service animation & live-action production: writing, casting, voice direction, editing, and more.",
+    images: ["/logo.png"],
+  },
   icons: { icon: "/logo.png" },
 };
 
